@@ -43,5 +43,16 @@ const nin = 33.99943;
 // console.log(Math.ceil(nin))
 // console.log(Math.floor(nin))
 
-console.log(Math.max(3,8,8.8, 10.3))
-console.log(Math.min(3,8,8.8, 10.3))
+// console.log(Math.max(3,8,8.8, 10.3))
+// console.log(Math.min(3,8,8.8, 10.3))
+
+// Range we want is between 0 and 5
+// console.log(Math.round(Math.random()*10))
+
+
+/*
+write code that will return a random letter from your name
+*/
+
+let myName = "Ejike"
+console.log(myName.charAt(0))
