@@ -21,6 +21,10 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+body > * {
+    margin-inline: 2rem;
+}
+
 section {
     padding-block: 70px;
 }
@@ -101,7 +105,7 @@ button:hover {
 
 .hero-section-texts .title {
     font-size: 2rem;
-    opacity: 0.7;
+    /* opacity: 0.7; */
 }
 
 .hero-section-img {
@@ -212,15 +216,18 @@ button:hover {
         padding: 10px;
     }
 
+    body > * {
+        margin: 0;
+    }
+
     section {
         padding-block: 50px;
     }
 
-    .nav, .about-me-section,     .hero-section {
+    .nav, .about-me-section, .hero-section {
         flex-direction: column;
         gap: 40px;
     }
-
 
     .hero-section-texts .name {
         font-size: 3rem;
@@ -230,11 +237,20 @@ button:hover {
         font-size: 1.5rem;
     }
 
+    .hero-section {
+        border-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)) fill 1;
+    }
+
     .services-cards-container {
         grid-template-columns: 1fr;
     }
 
     .service-card {
         padding: 50px 25px;
+    }
+
+    .about-me-btns {
+        justify-content: center;
+        align-items: center;
     }
 }
