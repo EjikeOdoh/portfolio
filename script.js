@@ -126,9 +126,9 @@ write code that will return a random letter from your name
 // printRandomLetterFromName('Kmutay')
 
 
-// function explain(name) {
-//     console.log(name, "is explaining")
-// }
+function explain(name) {
+    console.log(name, "is explaining")
+}
 
 // explain("Mercy")
 // explain("Lovelyn")
