@@ -21,7 +21,7 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-body > * {
+body>* {
     margin-inline: 2rem;
 }
 
@@ -77,6 +77,26 @@ button:hover {
 
 .nav .logo {
     font-size: 3rem;
+}
+
+.nav .mobile-menu {
+    position: absolute;
+    background-color: white;
+    z-index: 20;
+    top: 110px;
+    bottom: 0;
+    width: 50%;
+    padding: 20px;
+    left: 0;
+    transition: all 0.3s linear;
+}
+
+.nav .mobile-menu ul {
+    display: grid;
+}
+
+.nav .menu-btn {
+    display: none;
 }
 
 .hero-section {
@@ -179,9 +199,9 @@ button:hover {
 
 .two {
     border-image: linear-gradient(rgba(255, 209, 2, 0.76), rgba(255, 238, 0, 0.726)) fill 1;
-}.services-cards-container 
+}
 
-.three {
+.services-cards-container .three {
     border-image: linear-gradient(rgba(255, 0, 255, 0.4), rgba(234, 0, 255, 0.4)) fill 1;
 }
 
@@ -189,11 +209,12 @@ button:hover {
     border-image: linear-gradient(rgba(94, 255, 0, 0.4), rgba(43, 255, 0, 0.4)) fill 1;
 }
 
-.service-card > * {
+.service-card>* {
     color: white;
 }
 
-.service-card h3, .service-card p {
+.service-card h3,
+.service-card p {
     z-index: 10;
 }
 
@@ -216,7 +237,7 @@ button:hover {
         padding: 10px;
     }
 
-    body > * {
+    body>* {
         margin: 0;
     }
 
@@ -224,9 +245,26 @@ button:hover {
         padding-block: 50px;
     }
 
-    .nav, .about-me-section, .hero-section {
+    header {
+        height: 100px;
+    }
+
+    .about-me-section,
+    .hero-section {
         flex-direction: column;
         gap: 40px;
+    }
+
+    .nav>ul {
+        display: none;
+    }
+
+
+    .nav .menu-btn {
+        display: block;
+        width: fit-content;
+        background: none;
+        border: none;
     }
 
     .hero-section-texts .name {
@@ -253,4 +291,15 @@ button:hover {
         justify-content: center;
         align-items: center;
     }
+}
+
+.hide {
+    left: -100% !important;
+}
+
+.no-scroll {
+    overflow: hidden !important; 
+    /* position: fixed; */
+    /* width: 100%;  */
+    /* height: 100%;  */
 }
